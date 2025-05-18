@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos</title>
+    <link rel="icon" href="Chronos2.jpeg">
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <a href="#"><img class="logo-img" src="Chronos logo.png" alt="BloodWeb"></a>
+            <div class="nav"></div>
+        </div>
+        <div class="innerBox">
+            <div class="theBlurBox">
+                <div class="sellingProductInformationFillup detailhead">
+                    <div class="headingIconContainer">
+                        <div class="header">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <div class="detailhead">Fill information</div>
+                        </div>
+                        <button id="closeFillInfo"><i class="fa-solid fa-circle-xmark"></i></button>
+                    </div>
+                    <div class="fillInfoSection detailhead">
+                        <div class="product productInfo">
+                            <div class="boxName">VCH101</div>
+                            <input id="boxNumber" type="text" placeholder="Box number">
+                        </div>
+                        <div class="product productInfo">
+                            <div class="boxName">VCH101</div>
+                            <input id="boxNumber" type="text" placeholder="Box number">
+                        </div>
+                        <div class="product productInfo">
+                            <div class="boxName">VCH101</div>
+                            <input id="boxNumber" type="text" placeholder="Box number">
+                        </div>
+                        <div class="product productInfo">
+                            <div class="boxName">VCH101</div>
+                            <input id="boxNumber" type="text" placeholder="Box number">
+                        </div>
+                    </div>
+                    <button></button>
+                </div>
+            </div>
+            
+            <div class="Left">
+                <div class="Stocks card">
+                    <div class="header stockhead">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <div class="detailhead">Stock details</div>
+                    </div>
+                    <div class="details">
+                        <div class="bullet stockDetail">
+                            <div class="product">
+                                <span class="name">Box</span><span class="name" id="box">20</span>
+                            </div>
+                            <div class="productDetails">
+                                <div class="product">
+                                    <span class="name">VCH101</span><span class="name" id="box">20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bullet stockDetail">
+                            <div class="product">
+                                <span class="name">Satelite Disk</span><span class="name" id="box">20</span>
+                            </div>
+                            <div class="productDetails">
+                                <div class="product">
+                                    <span class="name">VCH101</span><span class="name" id="box">20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bullet stockDetail">
+                            <div class="product">
+                                <span class="name">Cable</span><span class="name" id="box">40m</span>
+                            </div>
+                            <div class="productDetails">
+                                <div class="product">
+                                    <span class="name">VCH101</span><span class="name" id="box">20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bullet stockDetail">
+                            <div class="product">
+                                <span class="name">LNB</span><span class="name" id="box">20</span>
+                            </div>
+                            <div class="productDetails">
+                                <div class="product">
+                                    <span class="name"></span><span class="name" id="box"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Inventory card">
+                    <div class="header">
+                        <i class="fa-solid fa-notes-medical"></i>
+                        <div class="detailhead">Add stocks</div>
+                    </div>
+                    <div class="stockContainer">
+                        <div class="addStocks">
+                            <div class="stockItem">
+                                <button id="decrease"><i class="fa-solid fa-circle-minus"></i></button>
+                                <input type="number" class="input" min="0" placeholder="box">
+                                <button id="increase"><i class="fa-solid fa-circle-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="submitStock">
+                            <button class="submitStocks"><i class="fa-solid fa-circle-chevron-up"></i></button>
+                        </div> 
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="Middle card">
+                <div class="section">
+                    <div class="header">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        <div class="detailhead">Sell products</div>
+                    </div>
+                    
+                    <form action="" class="productForm">
+                        <div class="detailhead sellContainer">
+                            <select name="buyer" id="buyer" class="select" required>
+                                <option value="" disabled selected>Select buyer</option>
+                                <option value="Customer">Customer</option>
+                                <option value="Retailer">Retailer</option>
+                            </select>
+                            <div class="buyerName">
+                                <input type="text" id="name" placeholder="Enter name" required>
+                            </div>
+                            <div class="bProduct">
+                            </div>
+                            <button class="buttonCheckout"><i class="fa-solid fa-cart-shopping"></i></buttona>
+                        </div>
+                    </form>
+                </div>
+                <div class="section">
+                    <div class="detailhead reportContainer">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="Right card">
+                <div class="header">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <div class="detailhead">Sales history</div>
+                </div>
+                <div class="detailhead sales">
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

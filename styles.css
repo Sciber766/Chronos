@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #ffffff;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background Gradient Overlay */
+.background-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 115, 255, 0.381), rgba(0, 0, 0, 0.9));
+    z-index: -1;
+}
+
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: rgb(0, 73, 133);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #5495c4e3;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+}
+.subtitle:hover{
+    color: #346d96e3;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-landing {
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: white;
+    background: #2f88fd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-landing:hover {
+    background: #2e75e6;
+    transform: scale(1.05);
+}
+
+.signup {
+    background: #4c4e50;
+}
+
+.signup:hover {
+    background: #444;
+}
+
+/* Login Page Specific Styles */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(18deg, #cccccc,#7ccdff);
+    color: white;
+    text-align: center;
+}
+
+/* Form Styling */
+.form-container {
+    background: linear-gradient(18deg, #cccccc,#7ccdff);
+    border: 1px solid rgba(0, 136, 255, 0.3);
+    box-shadow: inset 0 0 5px rgb(221, 221, 221), 0 0 8px rgba(0, 106, 206, 0.655);
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #f6fcff;
+    color: rgb(30, 30, 30);
+    outline: none;
+}
+
+.form-container input:focus {
+    background: #fdffff;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Links */
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.links a {
+    color: #0074c2;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
